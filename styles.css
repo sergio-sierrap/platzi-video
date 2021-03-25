@@ -1,7 +1,6 @@
 body {
     margin:0px;
     font-family: 'Mulish', sans-serif;
-    background-color: #0093E9;
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 50%);
     background-repeat: no-repeat; 
     background-attachment: fixed;
@@ -69,8 +68,9 @@ text-decoration: underline;
     color: white;
 }
 
+/*Página de Login: LOGIN*/
+
 .login {
-    background: linear-gradient(160deg, #0093E9 0%, #80D0C7 50%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,6 +145,8 @@ text-decoration: underline;
     text-decoration: underline;
 }
 
+/*Css de inputs*/
+
 .input {
     background-color: transparent;
     border-top: 0;
@@ -167,6 +169,8 @@ text-decoration: underline;
     outline: none;
 }
 
+/*Css de botones*/
+
 .button {
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
@@ -185,11 +189,46 @@ text-decoration: underline;
     outline: none;
 }
 
+/*Página de registro: REGISTER*/
+
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.register--container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.register--container-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register--container-signup a {
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
-
-
-
+/*CSS Home*/
 
 .main {
     height: 300px;
@@ -201,7 +240,7 @@ text-decoration: underline;
     font-size:25px;
 }
 
-
+/*Sección de carousel*/
 
 .carousel {
     width: 100%;
@@ -266,19 +305,47 @@ text-decoration: underline;
 .footer {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100px;
+    justify-content: space-around;
+    height: 85px;
     width: 100%;
+    bottom: 0;
 }
 
 .footer a {
     color:white;
     cursor: pointer;
     font-size: 14px;
-    padding-left: 30px;
     text-decoration: none;
+    
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content:stretch;
+    bottom: 0;
+    left: 0;
 }
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .login__container {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    .register--container {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }

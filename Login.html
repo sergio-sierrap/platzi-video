@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--MediaQueries-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Fuentes-->
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <!--Styles.css-->
     <link rel="stylesheet" href="./styles.css">
-    <title>Platzi-Video</title>
+    <!--Título-->
+    <title>PlatziVideo: Login</title>
 </head>
 
-<style>
-
-</style>
-<!--Se abre: BODY-->
 <body>
     
+    <!--1: Sección de HEADER-->
     <header class="header">
         <img class="header__img" src="assets/logo-platzi.png" alt="Logo PlatziVideo">
         <div class="header__menu">
@@ -31,61 +33,37 @@
             </ul>
         </div>
     </header>
-<!--1: Sección de LOGIN-->
 
-<section class="login">
-    <section class="login__container">
-        <h2 class="">Inicia sesión</h2>
-        <form class="login__container--form" action="">
-            <input class="input" type="text" placeholder="Correo">
-            <input class="input" type="password" placeholder="Contraseña">
-            <button class="button">Iniciar sesión</button>
-            <div class="login__container--remember-me">
-                <label>
-                    <input type="checkbox" name="" id="cbox-rember-me" value="checkbox">Recuérdame
-                </label>
-                <a href="/">Olvidé mi contraseña</a>
-            </div>
-        </form>
-                    <!--Sección de LOGIN: Links de acceso con redes sociales-->
-        <section class="login__container--social-media">
-            <div><img src="assets/icons/login-google-icon.png" alt="Google">Inicia sesión con Google</div>
-            <div><img src="assets/icons/login-twitter-icon.png" alt="Twitter">Inicia sesión con Twitter</div>
-        </section>
-        <p class="login__container--register">No tienes ninguna cuenta <a href="">Regístrate</a></p>
-    </section>
-</section>
-
-<!--2: Sección de SEARCHBAR-->
-
-    <section class="main">
-        <h2 class="main__title">¿Qué quieres ver hoy?</h2>
-        <input class="input" type="text" placeholder="Buscar...">
-    </section>
-
-<!--3: Sección de CAROUSEL-->
-    <section class="carousel">
-        <div class="carousel__container">
-            <div class="carousel-item">
-                <img class="carousel-item__img" src="assets/carousel/Current/1 - Video camara man.jpeg" alt="Video camara man">
-                <div class="carousel-item__details">
-                    <div>
-                        <img src="assets/icons/card-plus-icon.png" alt="Add">
-                        <img src="assets/icons/card-play-icon.png" alt="Play">
+    <!--2: Sección de LOGIN-->
+    <section class="login">
+            <section class="login__container">
+                <h2 class="">Inicia sesión</h2>
+                <form class="login__container--form" action="">
+                    <input class="input" type="text" placeholder="Correo electrónico">
+                    <input class="input" type="password" placeholder="Contraseña">
+                    <button class="button">Iniciar sesión</button>
+                    <div class="login__container--remember-me">
+                        <label>
+                            <input type="checkbox" name="" id="cbox-rember-me" value="checkbox">Recuérdame
+                        </label>
+                        <a href="/">Olvidé mi contraseña</a>
                     </div>
-                    <p class="carousel-item__details--title">Título descriptivo</p>
-                    <p class="carousel-item__details--subtitle">2019 16+ 114</p>
-                </div>
-            </div>
-        </div>
+                </form>
+
+            <!--2.1: Links de acceso con redes sociales-->
+            <section class="login__container--social-media">
+                <div><img src="assets/icons/login-google-icon.png" alt="Google">Inicia sesión con Google</div>
+                <div><img src="assets/icons/login-twitter-icon.png" alt="Twitter">Inicia sesión con Twitter</div>
+            </section>
+            <p class="login__container--register">¿No tienes ninguna cuenta? <a href="">Regístrate</a></p>
+        </section>
     </section>
 
-
+    <!--3: Sección de FOOTER-->
     <footer class="footer">
         <a href="/">Términos de uso</a>
         <a href="/">Declaración de privacidad</a>
         <a href="/">Centro de ayuda</a>
-
     </footer>
 
 </body>
