@@ -137,7 +137,7 @@ text-decoration: underline;
 .login__container--register a {
     color: white;
     font-size: 16px;
-    font-weight: bold
+    font-weight: bold;
     text-decoration: none;
 }
 
