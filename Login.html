@@ -7,173 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
     <title>Platzi-Video</title>
 </head>
 
 <style>
-    body {
-        margin:0px;
-        font-family: 'Mulish', sans-serif;
-        background-color: #0093E9;
-        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 50%);
-        background-repeat: no-repeat; 
-        background-attachment: fixed;
-    }
-
-    .header {
-        width: 100%;
-        height: 80px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header__img {
-        width: 200px;
-        margin-top: 10px;
-        margin-left: 10px;
-    }
-
-    .header__menu {
-        margin-right: 60px;
-    }
-
-    .header__menu ul {
-        display: none;
-        list-style: none;
-        padding: 0px;
-        position: absolute;
-        width: 100px;
-        text-align: right;
-        margin: 0px 0px 0px -14px;
-    }
-
-    .header__menu:hover ul,ul:hover {
-        display: block;
-    }
-
-    .header__menu li {
-        margin: 10px 0px;
-    }
-
-    .header__menu li a {
-        color: white;
-        text-decoration: none;
-    }
-
-  .header__menu li a:hover {
-    text-decoration: underline;
-  }
-
-    .header__menu--profile {
-       margin-right: 8px;
-       display: flex;
-       align-items: center;
-       cursor: pointer;
-    }
-
-    .header__menu--profile img {
-        margin-right: 8px;
-        width: 40px;
-    }
-
-    .header__menu--profile p {
-        margin: 0px;
-        color: white;
-    }
-
-    .main {
-        height: 300px;
-        text-align: center;
-    }
-
-    .main__title {
-        color: white;
-        font-size:25px;
-    }
-
-    .input {
-        border: 2px solid white;
-        border-radius: 30px;
-        color:white;
-        font-family: 'Mulish', sans-serif;
-        font-size: 16px;
-        height: 50px;
-        padding: 0px 20px;
-        width: 70%;
-        outline: none;
-    }
-
-    ,input:focus {
-        outline: none;
-    }
-
-    ::placeholder {
-        color: rgb(1, 24, 39);
-    }
-
-    .carousel {
-        width: 100%;
-        overflow: scroll;
-        padding: 30px;
-        position: relative;
-    }
-
-    .carousel__container {
-        white-space: nowrap;
-        margin: 70px 0px;
-        padding-bottom: 10px;
-    }
-
-    .carousel-item {
-        background-color: yellowgreen;
-        width: 200px;
-        height: 250px;
-        border-radius: 20px;
-        overflow: hidden;
-        margin-right: 10px;
-        display: inline-block;
-        cursor: pointer;
-        transition: 450ms all;
-        transform-origin: center left;
-        position: relative;
-    }
-
-    .carousel-item:hover ~ .carousel-item {
-        transform: translate3d(100px, 0, 0);
-    }
-
-    .carousel__container:hover .carousel-item {
-        opacity: 0.3;
-    }
-
-    .carousel__container:hover .carousel-item:hover {
-        transform: scale(1.5);
-        opacity: 1;
-    }
-
-    .carousel-item__img {
-        width: 200px;
-        height: 250px;
-        object-fit: cover;
-    }
-
-    .carousel-item__details {
-        color: white;
-        background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
-        font-size: 12px;
-        opacity: 1;
-        transition: 450ms opacity;
-        padding: 10px;
-        position: absolute;
-        top: 1;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
 
 </style>
-<!--Sección de body-->
+<!--Se abre: BODY-->
 <body>
     
     <header class="header">
@@ -190,7 +31,7 @@
             </ul>
         </div>
     </header>
-<!--Sección de LOGIN-->
+<!--1: Sección de LOGIN-->
 
 <section class="login">
     <section class="login__container">
@@ -207,32 +48,22 @@
             </div>
         </form>
                     <!--Sección de LOGIN: Links de acceso con redes sociales-->
-        <section class="login__container--social media">
-            <div><img src="assets/icons/login-google-icon.jpg" alt="Inicia sesión con Google"></div>
-            <div><img src="assets/icons/login-twitter-icon.jpg" alt="Inicia sesión con Twitter"></div>
+        <section class="login__container--social-media">
+            <div><img src="assets/icons/login-google-icon.png" alt="Google">Inicia sesión con Google</div>
+            <div><img src="assets/icons/login-twitter-icon.png" alt="Twitter">Inicia sesión con Twitter</div>
         </section>
-
-
-
+        <p class="login__container--register">No tienes ninguna cuenta <a href="">Regístrate</a></p>
     </section>
-
-
-
 </section>
 
-
-
-
-
-
-
-
+<!--2: Sección de SEARCHBAR-->
 
     <section class="main">
         <h2 class="main__title">¿Qué quieres ver hoy?</h2>
         <input class="input" type="text" placeholder="Buscar...">
     </section>
 
+<!--3: Sección de CAROUSEL-->
     <section class="carousel">
         <div class="carousel__container">
             <div class="carousel-item">
@@ -248,6 +79,14 @@
             </div>
         </div>
     </section>
+
+
+    <footer class="footer">
+        <a href="/">Términos de uso</a>
+        <a href="/">Declaración de privacidad</a>
+        <a href="/">Centro de ayuda</a>
+
+    </footer>
 
 </body>
 </html>
